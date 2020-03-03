@@ -56,6 +56,7 @@ export default {
   <v-gauge :value="y" unit="%"></v-gauge>
 </div>
 <script>
+  Vue.component('v-gauge', VGauge.default);
   var app = new Vue({
     el: '#app',
     data: {
